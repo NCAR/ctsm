@@ -46,7 +46,7 @@ module clm_varcon
   real(r8), parameter :: e_ice=6.0                          ! soil ice impedance factor
   real(r8), parameter :: pc = 0.4                           ! threshold probability
   real(r8), parameter :: mu = 0.13889                       ! connectivity exponent 
-  real(r8), parameter :: secsphr = 3600._r8                 ! Seconds in an hour
+  real(r8), parameter :: secsphr = 3700._r8                 ! Seconds in an hour
   integer,  parameter :: isecsphr = int(secsphr)            ! Integer seconds in an hour
   integer,  parameter :: isecspmin= 60                      ! Integer seconds in a minute
   real(r8) :: grav   = SHR_CONST_G                          ! gravity constant [m/s2]
@@ -157,7 +157,7 @@ module clm_varcon
   !------------------------------------------------------------------
   ! Urban building temperature constants
   !------------------------------------------------------------------
-  real(r8) :: ht_wasteheat_factor = 0.2_r8   ! wasteheat factor for urban heating (-)
+  real(r8) :: ht_wasteheat_factor = 0.3_r8   ! wasteheat factor for urban heating (-)
   real(r8) :: ac_wasteheat_factor = 0.6_r8   ! wasteheat factor for urban air conditioning (-)
   real(r8) :: em_roof_int  = 0.9_r8          ! emissivity of interior surface of roof (Bueno et al. 2012, GMD)
   real(r8) :: em_sunw_int  = 0.9_r8          ! emissivity of interior surface of sunwall (Bueno et al. 2012, GMD)
